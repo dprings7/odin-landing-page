@@ -1,4 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex; /* Put flex container on the entire body to begin with */
+    flex-direction: column; /* Align flex items vertically */
+    align-items: center; /* Center in middle of cross axis */ 
+
+    font-family: Roboto, sans-serif; /* Apply font styling to entire page */
+
+    /* Remove the default padding and margin */
+    margin: 0px;
+    padding: 0px;
+
+    height: 100vh;
+}
+
+ul {
+    list-style: none; /* Remove bullet points */
+}
+
+a {
+    text-decoration: none; /* Remove underlining */
+    color: inherit; /* Force links to inherit color from div as this is not done by default */
+}
+
+.header {
+    display: flex; /* Flex container that will contain Header Logo and Links */
+    justify-content: space-around; /* Distribute items evenly, with half sized space on each side */
+    align-items: center; /* Center in middle of cross axis */ 
+
+    background-color: #1F2937;
+    width: 100%; /* Make it so background of header expands to entire page */
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.top-links {
+    display: flex; /* Flex container that will contain the header links */
+    gap: 20px; /* Spread out header links */
+
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-container {
+    display: flex;
+}
+
 /* 
 body {
     display: flex;
