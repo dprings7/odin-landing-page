@@ -21,12 +21,17 @@ a {
 }
 
 .header {
-    display: flex; /* Flex container that will contain Header Logo and Links */
+    background-color: #1F2937;
+    margin: 0 auto;
+}
+
+.header .wrapper {
+    max-width: 1000px;
+    padding: 25px 0;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between; /* Distribute items evenly, with half sized space on each side */
     align-items: center; /* Center in middle of cross axis */ 
-
-    background-color: #1F2937;
-    padding: 0px 300px 25px 300px;
 }
 
 .logo {
@@ -43,19 +48,22 @@ a {
 }
 
 .main-container {
-    display: flex; /* Will contain the various sub containers for main page */
-    flex-direction: column; /* Set sub containers are vertical */
+    display: block;
 }
 
 .intro-container {
+    background-color: #1F2937;
+    margin: 0 auto; 
+}
+
+.intro-container .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: #1F2937;
-
-    padding: 50px 300px;
+    padding: 50px 0;
+    max-width: 1000px;
     gap: 100px;
+    margin: 0 auto; 
 }
 
 .intro-container h1 {
@@ -88,16 +96,23 @@ a {
 }
 
 .image-container img {
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
-.info-container {
+.info-container {  
+    margin: 0 auto;
+}
+
+.info-container .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 300px;
+    padding: 50px 0;
+    max-width: 1000px;
+    gap: 50px;
+    margin: 0 auto; 
 }
 
 .info-container h2 {
@@ -129,11 +144,18 @@ a {
 }
 
 .quote-container {
+    margin: 0 auto;
+    background-color: #E5E7EB;
+}
+
+.quote-container .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 300px;
-    background-color: #E5E7EB;
+    padding: 50px 0;
+    max-width: 1000px;
+    gap: 100px;
+    margin: 0 auto; 
 }
 
 .quote-container .quote {
@@ -152,10 +174,13 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 300px;
+    margin: 50px auto;
     background-color: #3882F6;
     border-radius: 8px;
-    color:#F9FAF8;
+    color: #F9FAF8;
+    padding: 20px;
+    max-width: 500px;
+    gap: 20px;
 }
 
 .action-left h3 {
@@ -176,10 +201,17 @@ a {
 }
 
 .footer {
+    margin: 0 auto;
+    background-color: #1F2937;
+    color:#F9FAF8;
+}
+
+.footer .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 300px;
-    background-color: #1F2937;
-    color:#F9FAF8;
+    padding: 50px 0;
+    max-width: 1000px;
+    gap: 100px;
+    margin: 0 auto; 
 }
